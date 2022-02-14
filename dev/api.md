@@ -54,7 +54,7 @@
 
 #### register
 
-`/api/user/register/`
+`/api/register/`
 
 in:
 
@@ -77,7 +77,7 @@ out:
 
 #### login
 
-`/api/user/login/`
+`/api/login/`
 
 in:
 
