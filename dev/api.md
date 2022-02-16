@@ -54,7 +54,7 @@
 
 #### register
 
-`/api/user/register/`
+`/api/register/`
 
 in:
 
@@ -77,7 +77,7 @@ out:
 
 #### login
 
-`/api/user/login/`
+`/api/login/`
 
 in:
 
@@ -146,14 +146,14 @@ out:
 
 #### get_question_detail
 
-`/api/question/get_question_detail/`
+`/api/question/get_question_detail/:id`
+通过占位符传递id
 
 in:
 
 ```json
 {
     "token":"",
-    "question_id":""
 }
 ```
 
@@ -171,16 +171,14 @@ out:
 
 #### get_question_list
 
-`/api/question/get_question_list/`
+`/api/question/get_question_list/:page/:amount`
+通过占位符传递页码和每页显示数量
 
 in:
 
 ```json
 {
     "token":"",
-    "question_id":"",
-    "start_id":"",
-    "amount":"",
 }
 ```
 
